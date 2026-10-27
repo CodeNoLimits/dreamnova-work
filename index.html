@@ -172,7 +172,25 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
 .wide__v{border-radius:18px;overflow:hidden;box-shadow:0 0 0 1px var(--line2);background:var(--bg3)}
 .wide__v iframe,.wide__v video{width:100%;aspect-ratio:16/9;border:0;display:block}
 .wide__v div{padding:14px 16px}
-.cases{display:grid;gap:14px}
+.cases{display:grid;gap:14px;margin-top:40px}
+.vg{margin-top:48px}
+.vg__head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px}
+.vg__title{font:700 clamp(20px,2.6vw,28px)/1.15 var(--f-display);letter-spacing:-.02em}
+.vg__title span{font:500 12px/1 var(--f-mono);letter-spacing:.08em;color:var(--gold-lt);margin-left:10px;vertical-align:middle}
+.vg__note{margin-top:8px;max-width:640px;font-size:14.5px;color:var(--mute)}
+.vg__nav{display:none;gap:8px;flex:none}
+.vg__nav button{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;color:var(--ink);background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);transition:background .3s}
+.vg__nav button:hover{background:var(--gold);color:#140f04}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);margin-inline:calc(var(--pad) * -1);padding:4px var(--pad) 14px;scrollbar-width:thin;scrollbar-color:rgba(212,175,55,.4) transparent;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.rail>.reel{flex:0 0 min(44vw,214px);scroll-snap-align:start}
+.rail>.reel:hover{transform:none}
+.lf{flex:0 0 min(84vw,430px);scroll-snap-align:start;border-radius:18px;overflow:hidden;background:var(--bg2);box-shadow:0 0 0 1px var(--line2)}
+.lf__m{position:relative;aspect-ratio:16/9;background:#000}
+.lf__m img,.lf__m iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.lf__m .reel__play{background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.7))}
+.lf__dur{position:absolute;right:10px;bottom:10px;padding:5px 9px;border-radius:8px;font:500 11.5px/1 var(--f-mono);background:rgba(0,0,0,.75);pointer-events:none}
+.lf__b{padding:14px 16px 16px}
+.lf__b h4{margin-top:5px;font:600 15.5px/1.35 var(--f-body)}
 .case{position:relative;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;padding:14px;border-radius:18px;background:var(--bg2);box-shadow:0 0 0 1px var(--line2)}
 .case img{width:96px;height:96px;object-fit:cover;border-radius:12px;filter:saturate(.7) brightness(.8)}
 .case__tag{display:inline-block;font:500 11.5px/1.35 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-lt)}
@@ -232,6 +250,7 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
   .foot__row{flex-direction:row;justify-content:space-between}
 }
 
+@media (min-width:860px){.vg__nav{display:flex}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   .rv{opacity:1;transform:none}html{scroll-behavior:auto}
@@ -248,7 +267,7 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
     <span class="nav__badge">Work &amp; prototypes</span>
   </a>
   <nav class="nav__links" aria-label="Sections">
-    <a href="#voice">Voice agents</a><a href="#video">Video</a><a href="#demos">Live demos</a>
+    <a href="#voice">Voice agents</a><a href="#video">Shorts &amp; video</a><a href="#demos">Live demos</a>
   </nav>
   <a class="btn btn--gold btn--sm" href="#contact"><span>Get a prototype</span><span class="btn__ico" aria-hidden="true">↓</span></a>
 </header>
@@ -265,7 +284,7 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
       <div class="hero__copy">
       <p class="eyebrow rv"><span class="dot" aria-hidden="true"></span><span>Live portfolio · <span data-updated>updated recently</span></span></p>
       <h1 class="hero__title rv">Proof before <em>promises.</em></h1>
-      <p class="hero__sub rv"><strong>Every call answered, day and night.</strong> We build an AI receptionist from your own website, and you <strong>try it before you ever talk to us</strong>. Below: real prototypes, reels and live demos, with names withheld.</p>
+      <p class="hero__sub rv"><strong>Every call answered, day and night.</strong> We build an AI receptionist from your own website, and you <strong>try it before you ever talk to us</strong>. Below: real prototypes, the Shorts and long-form episodes we edited, and live demos.</p>
       <div class="hero__actions rv">
         <a class="btn btn--gold" href="https://dreamnova-voice-demo.vercel.app" target="_blank" rel="noopener"><span>Talk to the live AI receptionist</span><span class="btn__ico" aria-hidden="true">↗</span></a>
         <a class="btn btn--glass" href="#voice"><span>See the prototypes</span><span class="btn__ico" aria-hidden="true">↓</span></a>
@@ -274,8 +293,8 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
       <a class="hero__peek rv" href="#voice" aria-label="See a real prototype in action"><img src="assets/media/voice_prototype_m.jpg" alt="" width="580" height="540"><span>Real prototype · HVAC company · Ottawa, ON</span></a>
       <div class="stats rv" aria-live="polite">
         <div class="stat"><b data-count="voice">—</b><span>custom voice-agent prototypes</span></div>
-        <div class="stat"><b data-count="cities">—</b><span>US &amp; Canadian cities</span></div>
-        <div class="stat"><b data-latest>—</b><span>latest prototype built</span></div>
+        <div class="stat"><b data-count="shorts">—</b><span>Shorts delivered or sent</span></div>
+        <div class="stat"><b data-count="long">—</b><span>long-form episodes edited</span></div>
       </div>
     </div>
   </section>
@@ -320,10 +339,10 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
       <div class="sec-head rv">
         <p class="eyebrow">02 · Video editing</p>
         <h2 class="h2">Cut to be <em>watched to the end.</em></h2>
-        <p class="lead">Reels made in our studio, and client work described without names: their videos stay private until they say otherwise. Tap a reel to play it with sound.</p>
+        <p class="lead">The Shorts and long-form episodes we edit for a client, the sample Shorts we cut for prospects from their own videos, and our studio reels. Tap any video to play it with sound.</p>
       </div>
-      <div class="vgrid"><div class="reels" id="reels"></div><div class="cases" id="cases"></div></div>
-      <div class="wide" id="wide"></div>
+      <div id="vgroups"></div>
+      <div class="cases" id="cases"></div>
     </div>
   </section>
 
@@ -370,7 +389,7 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
 <footer class="foot">
   <div class="wrap foot__row">
     <span>© 2026 DreamNova Studio · David Amor · Jerusalem</span>
-    <span>We never publish a client's or prospect's name without their permission. · <span data-updated>Updated recently</span></span>
+    <span>Voice-agent prospects stay anonymous. Sample Shorts were cut from each expert's own public video and sent to them; ask and we remove any. · <span data-updated>Updated recently</span></span>
   </div>
 </footer>
 
@@ -412,10 +431,8 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
 
     // compteurs
     const cities = new Set(voice.map(v => v.region).filter(r => /, [A-Z]{2}$/.test(r) && !r.endsWith(", UK")));
-    const counts = {voice: voice.length, cities: cities.size};
+    const counts = {voice: voice.length, shorts: reels.filter(r => r.group !== "studio").length, long: vids.length};
     document.querySelectorAll("[data-count]").forEach(el => countUp(el, counts[el.dataset.count]));
-    const last = voice.map(v => v.date).sort().pop();
-    if (last) $("[data-latest]").textContent = md(last);
 
     // ruban : les 24 prototypes les plus récents
     const latest = [...voice].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 24);
@@ -436,8 +453,17 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
     document.querySelectorAll("[data-more]").forEach(btn => btn.addEventListener("click", () => { btn.closest(".grp").querySelectorAll(".is-hidden").forEach(li => li.classList.remove("is-hidden")); btn.parentElement.remove(); }));
     $("#ledger-sum").textContent = `${voice.length} prototypes · ${new Set(voice.map(v => v.region)).size} locations · names withheld`;
 
-    // reels 9:16
-    $("#reels").innerHTML = reels.map(r => `<figure class="reel rv"><video preload="none" playsinline poster="${esc(r.poster)}" src="${esc(r.media)}" aria-label="${esc(r.title)}"></video><button class="reel__play" type="button" aria-label="Play: ${esc(r.title)}"><span aria-hidden="true">▶</span></button><figcaption class="reel__cap"><div class="reel__tag">${esc(r.sector)}${r.region ? " · " + esc(r.region) : ""}</div><div class="reel__t">${esc(r.title)}</div></figcaption></figure>`).join("");
+    // vidéos par groupe : rails horizontaux (Shorts 9:16, épisodes 16:9 chargés au clic)
+    const embed = u => { const y = u.match(/(?:youtu\.be\/|v=|shorts\/)([\w-]{11})/); if (y) return `https://www.youtube-nocookie.com/embed/${y[1]}?rel=0&autoplay=1`; const g = u.match(/drive\.google\.com\/file\/d\/([\w-]+)/); return g ? `https://drive.google.com/file/d/${g[1]}/preview` : null; };
+    const G = data.groups || [], vitems = [...reels, ...vids];
+    const gid = e => e.group || (e.type === "video" ? "long-form" : "studio");
+    const ids = [...G.map(g => g.id), ...new Set(vitems.map(gid))].filter((v, i, arr) => arr.indexOf(v) === i && vitems.some(e => gid(e) === v));
+    const reelCard = r => `<figure class="reel"><video preload="none" playsinline poster="${esc(r.poster)}" src="${esc(r.media)}" aria-label="${esc(r.title)}"></video><button class="reel__play" type="button" aria-label="Play: ${esc(r.title)}"><span aria-hidden="true">▶</span></button><figcaption class="reel__cap"><div class="reel__tag">${esc(r.sector)}${r.region ? " · " + esc(r.region) : ""}</div><div class="reel__t">${esc(r.title)}</div></figcaption></figure>`;
+    const lfCard = v => `<article class="lf"><div class="lf__m"><img src="${esc(v.poster)}" alt="" width="640" height="360" loading="lazy"><button class="reel__play" type="button" data-embed="${esc(v.link ? embed(v.link) || v.link : v.media)}" aria-label="Play: ${esc(v.title)}"><span aria-hidden="true">▶</span></button>${v.region ? `<span class="lf__dur">${esc(v.region)}</span>` : ""}</div><div class="lf__b"><div class="reel__tag">${esc(v.sector)}</div><h4>${esc(v.title)}</h4></div></article>`;
+    $("#vgroups").innerHTML = ids.map(id => { const g = G.find(x => x.id === id) || {title: id}; const list = vitems.filter(e => gid(e) === id).sort((x, y) => x.id.localeCompare(y.id));
+      return `<section class="vg rv"><div class="vg__head"><div><h3 class="vg__title">${esc(g.title)}<span>${list.length}</span></h3>${g.note ? `<p class="vg__note">${esc(g.note)}</p>` : ""}</div><div class="vg__nav"><button type="button" data-dir="-1" aria-label="Scroll back">←</button><button type="button" data-dir="1" aria-label="Scroll forward">→</button></div></div><div class="rail">${list.map(e => e.type === "video" ? lfCard(e) : reelCard(e)).join("")}</div></section>`; }).join("");
+    document.querySelectorAll(".vg").forEach(sec => { const rail = sec.querySelector(".rail");
+      sec.querySelectorAll("[data-dir]").forEach(b => b.addEventListener("click", () => rail.scrollBy({left: +b.dataset.dir * rail.clientWidth * .8, behavior: "smooth"}))); });
     const all = [...document.querySelectorAll(".reel video")];
     document.querySelectorAll(".reel").forEach(fig => {
       const v = fig.querySelector("video");
@@ -445,10 +471,8 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
       v.addEventListener("play", () => { fig.classList.add("is-on"); all.forEach(o => o !== v && o.pause()); });
       v.addEventListener("ended", () => { fig.classList.remove("is-on"); v.controls = false; v.load(); });
     });
-
-    // vidéos longues 16:9 (YouTube, Drive ou fichier)
-    const embed = u => { const y = u.match(/(?:youtu\.be\/|v=|shorts\/)([\w-]{11})/); if (y) return `https://www.youtube-nocookie.com/embed/${y[1]}?rel=0`; const g = u.match(/drive\.google\.com\/file\/d\/([\w-]+)/); return g ? `https://drive.google.com/file/d/${g[1]}/preview` : null; };
-    $("#wide").innerHTML = vids.map(v => { const e = v.link && embed(v.link); const player = e ? `<iframe src="${e}" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen title="${esc(v.title)}"></iframe>` : `<video controls preload="none" playsinline poster="${esc(v.poster)}" src="${esc(v.media || v.link)}"></video>`; return `<div class="wide__v rv">${player}<div><div class="reel__tag">${esc(v.sector)}${v.region ? " · " + esc(v.region) : ""}</div><div class="reel__t">${esc(v.title)}</div></div></div>`; }).join("");
+    document.querySelectorAll(".lf .reel__play").forEach(btn => btn.addEventListener("click", () => { all.forEach(o => o.pause());
+      btn.parentElement.insertAdjacentHTML("beforeend", `<iframe src="${btn.dataset.embed}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Video"></iframe>`); btn.remove(); }));
 
     // cas clients décrits sans nom
     $("#cases").innerHTML = cases.map(c => `<article class="case rv"><img src="${esc(c.poster || "assets/media/poster_film.webp")}" alt="" width="96" height="96" loading="lazy"><div><span class="case__tag">${esc(c.sector)}${c.region ? " · " + esc(c.region) : ""}</span><h3>${esc(c.title)}</h3><p>${esc(c.note)}</p><span class="case__priv">● Name withheld</span></div></article>`).join("");

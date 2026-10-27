@@ -71,7 +71,8 @@
    "sector": "DreamNova studio",
    "region": "",
    "media": "assets/media/ava_receptionist.mp4",
-   "poster": "assets/media/ava_chat.jpg"
+   "poster": "assets/media/ava_chat.jpg",
+   "group": "studio"
   },
   {
    "id": "2026-10-23-ava-live-ai-receptionist",
@@ -138,14 +139,345 @@
    "ref": "3c87e9063f"
   },
   {
-   "id": "2026-10-22-expert-channels-sample-shorts",
+   "id": "prospect-short-wylie",
    "date": "2026-10-22",
-   "type": "case",
-   "title": "10 tailored sample Shorts",
-   "sector": "Expert YouTube channels — tax, CPA, therapy, law, coaching",
-   "region": "US & UK",
-   "note": "Each one cut from the expert's own long-form episode, with word-by-word captions, and sent to that expert only.",
-   "poster": "assets/media/poster_marketing.webp"
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "Rituals of connection",
+   "sector": "Couples therapist",
+   "region": "USA",
+   "media": "assets/media/prospect_short_wylie.mp4",
+   "poster": "assets/media/prospect_short_wylie.jpg"
+  },
+  {
+   "id": "prospect-short-wooten",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "Reasonable pay for S-Corp owners",
+   "sector": "CPA firm",
+   "region": "USA",
+   "media": "assets/media/prospect_short_wooten.mp4",
+   "poster": "assets/media/prospect_short_wooten.jpg"
+  },
+  {
+   "id": "prospect-short-roberts",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "Why do we worry?",
+   "sector": "Trauma therapist & author",
+   "region": "UK",
+   "media": "assets/media/prospect_short_roberts.mp4",
+   "poster": "assets/media/prospect_short_roberts.jpg"
+  },
+  {
+   "id": "prospect-short-nettleman",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "Appealing a boundary arbitration",
+   "sector": "Land consultant",
+   "region": "USA",
+   "media": "assets/media/prospect_short_nettleman.mp4",
+   "poster": "assets/media/prospect_short_nettleman.jpg"
+  },
+  {
+   "id": "prospect-short-morgan",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "Serving as an out-of-state trustee",
+   "sector": "Trust & estate lawyer",
+   "region": "USA",
+   "media": "assets/media/prospect_short_morgan.mp4",
+   "poster": "assets/media/prospect_short_morgan.jpg"
+  },
+  {
+   "id": "prospect-short-mascardo",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "What high achievers get wrong about joy",
+   "sector": "Psychologist",
+   "region": "USA",
+   "media": "assets/media/prospect_short_mascardo.mp4",
+   "poster": "assets/media/prospect_short_mascardo.jpg"
+  },
+  {
+   "id": "prospect-short-lyons",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "What HYROX means for local gyms",
+   "sector": "Gym-business coach",
+   "region": "USA",
+   "media": "assets/media/prospect_short_lyons.mp4",
+   "poster": "assets/media/prospect_short_lyons.jpg"
+  },
+  {
+   "id": "prospect-short-jablonsky",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "The IRS 10-year collection clock",
+   "sector": "Tax-relief expert",
+   "region": "USA",
+   "media": "assets/media/prospect_short_jablonsky.mp4",
+   "poster": "assets/media/prospect_short_jablonsky.jpg"
+  },
+  {
+   "id": "prospect-short-bramley",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "Handling competing job offers",
+   "sector": "Salary-negotiation coach",
+   "region": "USA",
+   "media": "assets/media/prospect_short_bramley.mp4",
+   "poster": "assets/media/prospect_short_bramley.jpg"
+  },
+  {
+   "id": "prospect-short-bangura",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "prospect-shorts",
+   "title": "Trainer or behaviorist?",
+   "sector": "Dog behaviorist",
+   "region": "Phoenix, AZ",
+   "media": "assets/media/prospect_short_bangura.mp4",
+   "poster": "assets/media/prospect_short_bangura.jpg"
+  },
+  {
+   "id": "client-short-16",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Never remove documents from your file",
+   "sector": "Contrast edit",
+   "region": "0:45",
+   "media": "assets/media/client_short_16.mp4",
+   "poster": "assets/media/client_short_16.jpg"
+  },
+  {
+   "id": "client-short-15",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Don't comment on the opposing expert",
+   "sector": "Contrast edit",
+   "region": "0:35",
+   "media": "assets/media/client_short_15.mp4",
+   "poster": "assets/media/client_short_15.jpg"
+  },
+  {
+   "id": "client-short-14",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Designated? All your work is discoverable",
+   "sector": "Contrast edit",
+   "region": "0:39",
+   "media": "assets/media/client_short_14.mp4",
+   "poster": "assets/media/client_short_14.jpg"
+  },
+  {
+   "id": "client-short-13",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Talks with the lawyer aren't privileged",
+   "sector": "Contrast edit",
+   "region": "0:39",
+   "media": "assets/media/client_short_13.mp4",
+   "poster": "assets/media/client_short_13.jpg"
+  },
+  {
+   "id": "client-short-12",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Prepare your client before the deposition",
+   "sector": "Talking head",
+   "region": "0:49",
+   "media": "assets/media/client_short_12.mp4",
+   "poster": "assets/media/client_short_12.jpg"
+  },
+  {
+   "id": "client-short-11",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Don't let them cut off your answer",
+   "sector": "Talking head",
+   "region": "0:28",
+   "media": "assets/media/client_short_11.mp4",
+   "poster": "assets/media/client_short_11.jpg"
+  },
+  {
+   "id": "client-short-10",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Beware the simple yes-or-no answer",
+   "sector": "Talking head",
+   "region": "0:30",
+   "media": "assets/media/client_short_10.mp4",
+   "poster": "assets/media/client_short_10.jpg"
+  },
+  {
+   "id": "client-short-09",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "A conflict claim can end your case",
+   "sector": "Talking head",
+   "region": "0:36",
+   "media": "assets/media/client_short_09.mp4",
+   "poster": "assets/media/client_short_09.jpg"
+  },
+  {
+   "id": "client-short-08",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Destroyed notes look like deception",
+   "sector": "Talking head",
+   "region": "0:44",
+   "media": "assets/media/client_short_08.mp4",
+   "poster": "assets/media/client_short_08.jpg"
+  },
+  {
+   "id": "client-short-07",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Asked to rate the other expert",
+   "sector": "Talking head",
+   "region": "0:28",
+   "media": "assets/media/client_short_07.mp4",
+   "poster": "assets/media/client_short_07.jpg"
+  },
+  {
+   "id": "client-short-06",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "The yelling lawyer isn't the threat",
+   "sector": "Talking head",
+   "region": "0:22",
+   "media": "assets/media/client_short_06.mp4",
+   "poster": "assets/media/client_short_06.jpg"
+  },
+  {
+   "id": "client-short-05",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Clear conflicts before the first call",
+   "sector": "Talking head",
+   "region": "0:54",
+   "media": "assets/media/client_short_05.mp4",
+   "poster": "assets/media/client_short_05.jpg"
+  },
+  {
+   "id": "client-short-04",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Don't finance your client's lawsuit",
+   "sector": "Talking head",
+   "region": "0:46",
+   "media": "assets/media/client_short_04.mp4",
+   "poster": "assets/media/client_short_04.jpg"
+  },
+  {
+   "id": "client-short-03",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "One firm can't play both expert roles",
+   "sector": "Talking head",
+   "region": "0:34",
+   "media": "assets/media/client_short_03.mp4",
+   "poster": "assets/media/client_short_03.jpg"
+  },
+  {
+   "id": "client-short-02",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "Why “winning” a deposition means losing",
+   "sector": "Talking head",
+   "region": "0:38",
+   "media": "assets/media/client_short_02.mp4",
+   "poster": "assets/media/client_short_02.jpg"
+  },
+  {
+   "id": "client-short-01",
+   "date": "2026-10-22",
+   "type": "reel",
+   "group": "client-shorts",
+   "title": "An expert's goal: lose the least",
+   "sector": "Talking head",
+   "region": "0:43",
+   "media": "assets/media/client_short_01.mp4",
+   "poster": "assets/media/client_short_01.jpg"
+  },
+  {
+   "id": "client-long-taking-depositions",
+   "date": "2026-10-22",
+   "type": "video",
+   "group": "client-long",
+   "title": "How to Depose an Expert Witness: Advice From an Expert Deposed 600 Times",
+   "sector": "Long-form episode",
+   "region": "10:33",
+   "link": "https://drive.google.com/file/d/1dMMGjRPim3n4_6beBWCLYqkZ2yleXsnD/view",
+   "poster": "assets/media/client_long_taking-depositions.jpg"
+  },
+  {
+   "id": "client-long-six-steps",
+   "date": "2026-10-22",
+   "type": "video",
+   "group": "client-long",
+   "title": "Six Steps to Becoming a Great Expert Witness (40 Years on the Stand)",
+   "sector": "Long-form episode",
+   "region": "9:21",
+   "link": "https://drive.google.com/file/d/1B95AwUWRA9Snz8QDAwRjBEqJRh95qt-j/view",
+   "poster": "assets/media/client_long_six-steps.jpg"
+  },
+  {
+   "id": "client-long-privilege",
+   "date": "2026-10-22",
+   "type": "video",
+   "group": "client-long",
+   "title": "Consulting Expert vs. Designated Expert Witness: What Is Really Privileged?",
+   "sector": "Long-form episode",
+   "region": "8:31",
+   "link": "https://drive.google.com/file/d/1umDc5w032JR_hzhAyjwQmsfclusHk8qg/view",
+   "poster": "assets/media/client_long_privilege.jpg"
+  },
+  {
+   "id": "client-long-deposition-traps",
+   "date": "2026-10-22",
+   "type": "video",
+   "group": "client-long",
+   "title": "Deposition Traps Every Expert Witness Must Know (40 Years on the Stand)",
+   "sector": "Long-form episode",
+   "region": "9:20",
+   "link": "https://drive.google.com/file/d/1H5q7hg7GIFa6bMQ-lVZ7xUhX7SRYy1hR/view",
+   "poster": "assets/media/client_long_deposition-traps.jpg"
+  },
+  {
+   "id": "client-long-daubert",
+   "date": "2026-10-22",
+   "type": "video",
+   "group": "client-long",
+   "title": "Daubert for Financial Experts: Only About 40% of Challenges Succeed",
+   "sector": "Long-form episode",
+   "region": "10:52",
+   "link": "https://drive.google.com/file/d/1-N8TiGOBsNbNj_bHkbJ7yzqCYLeow71p/view",
+   "poster": "assets/media/client_long_daubert.jpg"
   },
   {
    "id": "2026-10-22-agencies-white-label-editing-page",
@@ -300,7 +632,8 @@
    "sector": "DreamNova studio",
    "region": "",
    "media": "assets/media/reel03_accel_en.mp4",
-   "poster": "assets/media/reel03_accel_en.jpg"
+   "poster": "assets/media/reel03_accel_en.jpg",
+   "group": "studio"
   },
   {
    "id": "voice-75fa5d3692",
@@ -410,16 +743,6 @@
    "sector": "HVAC company",
    "region": "Indianapolis, IN",
    "ref": "186abad2f2"
-  },
-  {
-   "id": "2026-10-15-professional-youtube-channel-management",
-   "date": "2026-10-15",
-   "type": "case",
-   "title": "YouTube channel management",
-   "sector": "Professional services channel",
-   "region": "USA",
-   "note": "First month: 16 Shorts and 5 long-form videos edited, captioned and packaged.",
-   "poster": "assets/media/poster_film.webp"
   },
   {
    "id": "voice-dfa5c8e54e",
@@ -1005,6 +1328,28 @@
    "sector": "HVAC company",
    "region": "Houston, TX",
    "ref": "966638af4a"
+  }
+ ],
+ "groups": [
+  {
+   "id": "client-shorts",
+   "title": "Client · expert-witness YouTube channel (USA)",
+   "note": "Month one: 16 Shorts cut from his lectures, captioned word by word and loudness-matched for YouTube (−14 LUFS)."
+  },
+  {
+   "id": "client-long",
+   "title": "Same client · long-form episodes",
+   "note": "Five 8–11 minute episodes edited from raw lecture footage, with chapters and captions. They open in Google Drive."
+  },
+  {
+   "id": "prospect-shorts",
+   "title": "Prospect samples · cut from their own videos",
+   "note": "Each one cut from an expert's own long-form episode, with word-by-word captions, then sent to that expert on Oct 22, 2026."
+  },
+  {
+   "id": "studio",
+   "title": "Studio reels",
+   "note": "Made in-house for DreamNova."
   }
  ]
 }
