@@ -75,7 +75,12 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
 @keyframes spin{to{transform:rotate(360deg)}}
 .hero__in{position:relative;z-index:2;padding-bottom:clamp(28px,5vh,56px)}
 .hero__art{display:none}
+.hero__peek{display:block;position:relative;margin-top:26px;border-radius:18px;overflow:hidden;height:200px;box-shadow:0 0 0 1px rgba(240,217,140,.25),0 30px 60px -30px #000}
+.hero__peek img{width:100%;height:100%;object-fit:cover;object-position:top}
+.hero__peek span{position:absolute;left:10px;bottom:10px;padding:7px 11px;border-radius:999px;font:500 11px/1 var(--f-mono);letter-spacing:.05em;color:var(--gold-lt);background:rgba(5,4,3,.82);backdrop-filter:blur(8px)}
+@media (max-width:999px){.hero{min-height:auto;padding-top:92px}}
 @media (min-width:1000px){
+  .hero__peek{display:none}
   .hero__copy{max-width:calc(100% - min(36vw,470px) - 56px)}
   .hero__title{font-size:clamp(64px,7vw,104px)}
 }
@@ -109,7 +114,7 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
 .ticker__item time{color:var(--dim)}
 
 /* sections */
-.block{padding:clamp(72px,11vw,140px) 0;border-bottom:1px solid var(--line2);scroll-margin-top:70px}
+.block{padding:clamp(56px,8vw,108px) 0;border-bottom:1px solid var(--line2);scroll-margin-top:70px}
 .sec-head{max-width:760px}
 .h2{margin-top:20px;font:700 clamp(36px,6.4vw,72px)/.98 var(--f-display);letter-spacing:-.035em}
 .h2 em{color:var(--gold-lt)}
@@ -145,6 +150,8 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
 .chips li{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:7px 8px 7px 13px;border-radius:999px;font-size:13.5px;color:var(--ink);background:rgba(255,255,255,.045);box-shadow:inset 0 0 0 1px rgba(255,255,255,.09)}
 .chips li b{display:grid;place-items:center;min-width:24px;height:22px;padding:0 6px;border-radius:999px;font:600 11.5px/1 var(--f-mono);color:#140f04;background:linear-gradient(180deg,#f3dc93,#d4af37)}
 .chips li.is-hidden{display:none}
+.grp__also{padding:16px 20px 20px;font-size:14px;color:var(--dim)}
+@media (min-width:860px){.grp__also{padding:18px 28px 22px}}
 .chips button{min-height:44px;padding:7px 16px;border-radius:999px;border:0;cursor:pointer;font:600 13px/1 var(--f-body);color:var(--gold-lt);background:rgba(212,175,55,.1);box-shadow:inset 0 0 0 1px var(--line)}
 
 /* vidéo */
@@ -258,15 +265,16 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
       <div class="hero__copy">
       <p class="eyebrow rv"><span class="dot" aria-hidden="true"></span><span>Live portfolio · <span data-updated>updated recently</span></span></p>
       <h1 class="hero__title rv">Proof before <em>promises.</em></h1>
-      <p class="hero__sub rv">Working <strong>AI receptionists built from real businesses' own websites</strong>, plus the reels and demos behind them. Names stay private. Most of it is <strong>running right now</strong>, so try it before you talk to us.</p>
+      <p class="hero__sub rv"><strong>Every call answered, day and night.</strong> We build an AI receptionist from your own website, and you <strong>try it before you ever talk to us</strong>. Below: real prototypes, reels and live demos, with names withheld.</p>
       <div class="hero__actions rv">
         <a class="btn btn--gold" href="https://dreamnova-voice-demo.vercel.app" target="_blank" rel="noopener"><span>Talk to the live AI receptionist</span><span class="btn__ico" aria-hidden="true">↗</span></a>
         <a class="btn btn--glass" href="#voice"><span>See the prototypes</span><span class="btn__ico" aria-hidden="true">↓</span></a>
       </div>
       </div>
+      <a class="hero__peek rv" href="#voice" aria-label="See a real prototype in action"><img src="assets/media/voice_prototype_m.jpg" alt="" width="580" height="540"><span>Real prototype · HVAC company · Ottawa, ON</span></a>
       <div class="stats rv" aria-live="polite">
         <div class="stat"><b data-count="voice">—</b><span>custom voice-agent prototypes</span></div>
-        <div class="stat"><b data-count="cities">—</b><span>cities in the US, Canada and the UK</span></div>
+        <div class="stat"><b data-count="cities">—</b><span>US &amp; Canadian cities</span></div>
         <div class="stat"><b data-latest>—</b><span>latest prototype built</span></div>
       </div>
     </div>
@@ -285,7 +293,7 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
         <figure class="frame rv">
           <div class="frame__bar" aria-hidden="true"><span></span><span></span><span></span><div class="frame__url">prototype · HVAC company · Ottawa, ON</div></div>
           <picture><source media="(max-width:640px)" srcset="assets/media/voice_prototype_m.jpg" width="580" height="540"><img src="assets/media/voice_prototype.jpg" width="1440" height="900" loading="lazy" alt="A voice-agent prototype mid-conversation: the caller reports a broken AC, the agent asks for their details, and a side panel fills in intent, caller, phone, reason and requested time."></picture>
-          <figcaption>A real prototype sent on Oct 22, 2026, shown mid-test. The business name is replaced; the caller and the number are fictional.</figcaption>
+          <figcaption>A real prototype sent on Oct 22, 2026, shown mid-test. The business name and number are swapped for fictional ones, and so is the caller.</figcaption>
         </figure>
         <div class="voice__text rv">
           <h3>What the team receives after every call</h3>
@@ -403,7 +411,7 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
     document.querySelectorAll("[data-updated]").forEach(el => el.textContent = `updated ${fmt(data.updated)}`);
 
     // compteurs
-    const cities = new Set(voice.map(v => v.region).filter(r => r && r.includes(",")));
+    const cities = new Set(voice.map(v => v.region).filter(r => /, [A-Z]{2}$/.test(r) && !r.endsWith(", UK")));
     const counts = {voice: voice.length, cities: cities.size};
     document.querySelectorAll("[data-count]").forEach(el => countUp(el, counts[el.dataset.count]));
     const last = voice.map(v => v.date).sort().pop();
@@ -420,11 +428,13 @@ em{font-family:var(--f-accent);font-style:italic;font-weight:400}
     voice.forEach(v => { const g = sectors.get(v.sector) || {sector: v.sector, n: 0, a: v.date, b: v.date, cities: new Map()}; g.n++; if (v.date < g.a) g.a = v.date; if (v.date > g.b) g.b = v.date;
       const c = g.cities.get(v.region) || {n: 0, b: v.date}; c.n++; if (v.date > c.b) c.b = v.date; g.cities.set(v.region, c); sectors.set(v.sector, g); });
     const SHOW = 12;
-    $("#ledger").innerHTML = [...sectors.values()].sort((x, y) => y.n - x.n).map(g => {
-      const cs = [...g.cities.entries()].sort((x, y) => y[1].b.localeCompare(x[1].b) || y[1].n - x[1].n);
-      return `<div class="grp"><div class="grp__top"><h4>${esc(plural(g.sector, g.n))}</h4><span class="grp__n">${g.n}</span></div><p class="grp__when">${range(g.a, g.b)} · ${cs.length} ${cs.length > 1 ? "locations" : "location"}</p><ul class="chips">${cs.map(([r, c], i) => `<li${i >= SHOW ? ' class="is-hidden"' : ""}>${esc(r)} <b>${c.n}</b></li>`).join("")}</ul>${cs.length > SHOW ? `<div class="chips"><button type="button" data-more>+${cs.length - SHOW} more locations</button></div>` : ""}</div>`; }).join("");
+    const secs = [...sectors.values()].sort((x, y) => y.n - x.n), big = secs.filter(g => g.n >= 3), small = secs.filter(g => g.n < 3);
+    $("#ledger").innerHTML = big.map(g => {
+      const cs = [...g.cities.entries()].sort((x, y) => y[1].n - x[1].n || y[1].b.localeCompare(x[1].b));
+      return `<div class="grp"><div class="grp__top"><h4>${esc(plural(g.sector, g.n))}</h4></div><p class="grp__when">${g.n} prototypes · ${cs.length} locations · ${range(g.a, g.b)}</p><ul class="chips">${cs.map(([r, c], i) => `<li${i >= SHOW ? ' class="is-hidden"' : ""}>${esc(r)} <b>${c.n}</b></li>`).join("")}</ul>${cs.length > SHOW ? `<div class="chips"><button type="button" data-more>+${cs.length - SHOW} more locations</button></div>` : ""}</div>`; }).join("")
+      + (small.length ? `<p class="grp__also">Also: ${small.map(g => `${g.n} prototype${g.n > 1 ? "s" : ""} for a ${esc(g.sector.toLowerCase())} (${esc([...g.cities.keys()].join(", "))})`).join(" · ")}.</p>` : "");
     document.querySelectorAll("[data-more]").forEach(btn => btn.addEventListener("click", () => { btn.closest(".grp").querySelectorAll(".is-hidden").forEach(li => li.classList.remove("is-hidden")); btn.parentElement.remove(); }));
-    $("#ledger-sum").textContent = `${voice.length} prototypes · ${cities.size} cities · names withheld`;
+    $("#ledger-sum").textContent = `${voice.length} prototypes · ${new Set(voice.map(v => v.region)).size} locations · names withheld`;
 
     // reels 9:16
     $("#reels").innerHTML = reels.map(r => `<figure class="reel rv"><video preload="none" playsinline poster="${esc(r.poster)}" src="${esc(r.media)}" aria-label="${esc(r.title)}"></video><button class="reel__play" type="button" aria-label="Play: ${esc(r.title)}"><span aria-hidden="true">▶</span></button><figcaption class="reel__cap"><div class="reel__tag">${esc(r.sector)}${r.region ? " · " + esc(r.region) : ""}</div><div class="reel__t">${esc(r.title)}</div></figcaption></figure>`).join("");
